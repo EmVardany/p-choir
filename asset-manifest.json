@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/p-choir/static/css/main.c1c15b95.css",
-    "main.js": "/p-choir/static/js/main.a22f579a.js",
+    "main.css": "/p-choir/static/css/main.7e751f59.css",
+    "main.js": "/p-choir/static/js/main.f264bdc3.js",
     "static/js/787.e4875cae.chunk.js": "/p-choir/static/js/787.e4875cae.chunk.js",
     "static/media/perfect_font.ttf": "/p-choir/static/media/perfect_font.86c7f30b050c4d22307b.ttf",
     "static/media/old-notes.png": "/p-choir/static/media/old-notes.925b71be95e6a9e728c0.png",
     "static/media/header-logo.svg": "/p-choir/static/media/header-logo.bd436a9d22d9cf9727dbace2a3a6b196.svg",
     "index.html": "/p-choir/index.html",
-    "main.c1c15b95.css.map": "/p-choir/static/css/main.c1c15b95.css.map",
-    "main.a22f579a.js.map": "/p-choir/static/js/main.a22f579a.js.map",
+    "main.7e751f59.css.map": "/p-choir/static/css/main.7e751f59.css.map",
+    "main.f264bdc3.js.map": "/p-choir/static/js/main.f264bdc3.js.map",
     "787.e4875cae.chunk.js.map": "/p-choir/static/js/787.e4875cae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1c15b95.css",
-    "static/js/main.a22f579a.js"
+    "static/css/main.7e751f59.css",
+    "static/js/main.f264bdc3.js"
   ]
 }
