@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/p-choir/static/css/main.7b36ee19.css",
-    "main.js": "/p-choir/static/js/main.ce8bd911.js",
+    "main.css": "/p-choir/static/css/main.4fd32413.css",
+    "main.js": "/p-choir/static/js/main.8be88472.js",
     "static/js/787.e4875cae.chunk.js": "/p-choir/static/js/787.e4875cae.chunk.js",
     "static/media/ya_viruyu.mp3": "/p-choir/static/media/ya_viruyu.54514f7859b8e2ad5c70.mp3",
     "static/media/old-notes.png": "/p-choir/static/media/old-notes.e9d0223b2fbd05e330bf.png",
     "static/media/perfect_font.ttf": "/p-choir/static/media/perfect_font.340f363b300871f360d2.ttf",
     "static/media/header-logo.svg": "/p-choir/static/media/header-logo.bd436a9d22d9cf9727dbace2a3a6b196.svg",
     "index.html": "/p-choir/index.html",
-    "main.7b36ee19.css.map": "/p-choir/static/css/main.7b36ee19.css.map",
-    "main.ce8bd911.js.map": "/p-choir/static/js/main.ce8bd911.js.map",
+    "main.4fd32413.css.map": "/p-choir/static/css/main.4fd32413.css.map",
+    "main.8be88472.js.map": "/p-choir/static/js/main.8be88472.js.map",
     "787.e4875cae.chunk.js.map": "/p-choir/static/js/787.e4875cae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b36ee19.css",
-    "static/js/main.ce8bd911.js"
+    "static/css/main.4fd32413.css",
+    "static/js/main.8be88472.js"
   ]
 }
