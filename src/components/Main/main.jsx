@@ -1,21 +1,47 @@
 import classes from './main.module.css';
+import Tabs from "../Tabs/Tabs";
+import Notes from "../Notes/Notes"
+import ImageGallery from 'react-image-gallery';
 
-import AudioPlayer from "../Player/AudioPlayer";
-import tracks from "../Player/tracks";
+const data = [
+    {
+        heading: "Сопрано",
+        audioSrc: require("../../assets/audios/Soprano/ya_viruyu.mp3")
+    },
+    {
+        heading: "Альт",
+        audioSrc: require("../../assets/audios/Alt/ya_viruyu.mp3")
+    },
+    {
+        heading: "Тенор",
+        audioSrc: require("../../assets/audios/Tenor/ya_viruyu.mp3")
+    },
+    {
+        heading: "Бас",
+        audioSrc: require("../../assets/audios/Bass/ya_viruyu.mp3")
+    }
+];
+
+const images = [
+    {
+        original: require('../../assets/lyrics/page1.jpeg'),
+        thumbnail: require('../../assets/lyrics/page1.jpeg'),
+    },
+    {
+        original: require('../../assets/lyrics/page2.jpeg'),
+        thumbnail: require('../../assets/lyrics/page2.jpeg'),
+    },
+    {
+        original: require('../../assets/lyrics/page3.jpeg'),
+        thumbnail: require('../../assets/lyrics/page3.jpeg'),
+    },
+];
 
 const Main = () => {
     return (
         <section className={classes.main}>
-            <div className={classes.header}>
-                <button>Сопрано</button>
-                <button>Альт</button>
-                <button>Тенор</button>
-                <button>Бас</button>
-            </div>
-            <div>
-                <AudioPlayer tracks={tracks} />
-            </div>
-            <div className={classes.content}>content</div>
+            <Tabs data={data}/>
+            <Notes images={images}/>
         </section>
     )
 }

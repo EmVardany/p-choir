@@ -1,0 +1,18 @@
+.player {
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+
+    -webkit-appearance: none; /* remove webkit styling */
+    appearance: none; /* remove webkit styling */
+}
+audio {
+    -webkit-appearance: none; /* remove webkit styling */
+    appearance: none; /* remove webkit styling */
+}
+audio::-webkit-media-controls-panel {
+    background-color: white;
+    height: 100%!important;
+    min-height: 50px;
+    -webkit-border-radius: 0;
+}

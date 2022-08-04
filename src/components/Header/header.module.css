@@ -24,8 +24,8 @@
 .verse {
     font-size: 18px;
     font-family: 'Marck Script', cursive;
-    letter-spacing: 1px;
-    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
     font-weight: 700;
     font-style: italic;
     text-align: left;

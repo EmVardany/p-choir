@@ -1,0 +1,30 @@
+.tabs {
+    background-color: #D5D4DB;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tab {
+    min-height: 50px;
+    min-width: 97px;
+    background: none;
+    border: 0 solid #ffffff;
+
+    font-size: 14px;
+    color: #777777;
+    cursor: pointer;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    background-color: #EBEAF2;
+}
+
+.tab:focus, .tab:active, .tab {
+    border: none;
+}
