@@ -5,7 +5,8 @@ const Notes = ({images}) => {
                          showNav={false}
                          showFullscreenButton={false}
                          showThumbnails={true}
-                         showPlayButton={false}/>;
+                         showPlayButton={false}
+                         infinite={false}/>;
 }
 
 export default Notes;
