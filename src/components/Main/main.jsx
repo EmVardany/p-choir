@@ -1,47 +1,34 @@
 import classes from './main.module.css';
 import Tabs from "../Tabs/Tabs";
 import Notes from "../Notes/Notes"
-import ImageGallery from 'react-image-gallery';
+import {useEffect, useState} from "react";
+import axios from "axios";
+import config from '../../config/config';
 
-const data = [
-    {
-        heading: "Сопрано",
-        audioSrc: require("../../assets/audios/Soprano/ya_viruyu.mp3")
-    },
-    {
-        heading: "Альт",
-        audioSrc: require("../../assets/audios/Alt/ya_viruyu.mp3")
-    },
-    {
-        heading: "Тенор",
-        audioSrc: require("../../assets/audios/Tenor/ya_viruyu.mp3")
-    },
-    {
-        heading: "Бас",
-        audioSrc: require("../../assets/audios/Bass/ya_viruyu.mp3")
-    }
-];
+const conf = config();
 
-const images = [
-    {
-        original: require('../../assets/lyrics/page1.jpeg'),
-        thumbnail: require('../../assets/lyrics/page1.jpeg'),
-    },
-    {
-        original: require('../../assets/lyrics/page2.jpeg'),
-        thumbnail: require('../../assets/lyrics/page2.jpeg'),
-    },
-    {
-        original: require('../../assets/lyrics/page3.jpeg'),
-        thumbnail: require('../../assets/lyrics/page3.jpeg'),
-    },
-];
+console.log(process.env.VERSION)
+
 
 const Main = () => {
+    const [curSong, setCurSong] = useState({});
+
+    const url = `${conf.host.localServer}${conf.host.version}`
+
+    const getData = async () => {
+        await axios.get(`${url}/songs/ya_viruyu`).then((res) => {
+            setCurSong(res.data)
+        }).catch((err) => console.log(err))
+    }
+
+    useEffect(() => {
+        getData()
+    }, [])
+
     return (
         <section className={classes.main}>
-            <Tabs data={data}/>
-            <Notes images={images}/>
+            {curSong?.partData?.length ? <Tabs data={curSong?.partData}/> : <div />}
+            {curSong?.notes?.length ? <Notes images={curSong?.notes}/> : <div />}
         </section>
     )
 }
