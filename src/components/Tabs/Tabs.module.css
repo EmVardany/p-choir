@@ -1,9 +1,8 @@
 .tabs {
     background-color: #D5D4DB;
     display: flex;
-    justify-content: space-around;
-    padding-left: 10px;
-    padding-right: 10px;
+    justify-content: start;
+    overflow-x: scroll;
 }
 
 .tab {
