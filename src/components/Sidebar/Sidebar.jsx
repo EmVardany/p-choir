@@ -19,7 +19,7 @@ const Sidebar = (props) => {
                     props.songList.map((song, key) => (
                             <li key={key}
                                 className={song.url_title === props.curSong.url_title ? 'active-item' : 'menu-item'}>
-                                <NavLink to={`/p-choir/${song.url_title}`}
+                                <NavLink to={`/${song.url_title}`}
                                          onClick={() => setCurSong(song)}>
                                     {song.title}
                                 </NavLink>

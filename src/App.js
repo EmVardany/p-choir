@@ -3,7 +3,7 @@ import {useState} from 'react';
 import {Route, Routes} from "react-router"
 import Header from "./components/Header/header";
 import Main from "./components/Main/main";
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 function App() {
     const [songsList, setSongsList] = useState([])
@@ -11,13 +11,13 @@ function App() {
 
     return (
         <div className="App">
-            <BrowserRouter>
-
+            <HashRouter>
                 <Header songsList={songsList} setSongsList={setSongsList} setCurSong={setCurSong} curSong={curSong}/>
                 <Routes>
-                    <Route path='/p-choir/:urlTitle' element={<Main curSong={curSong}/>}/>
+                    <Route path='/' element={<Main curSong={curSong} songsList={songsList} setCurSong={setCurSong}/>}/>
+                    <Route path='/:urlTitle' element={<Main curSong={curSong}/>}/>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }

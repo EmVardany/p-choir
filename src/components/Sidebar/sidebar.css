@@ -36,7 +36,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     position: absolute;
     height: 100%;
     top: 0;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 /* General sidebar styles */
