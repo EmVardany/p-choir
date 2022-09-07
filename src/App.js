@@ -3,6 +3,7 @@ import {useState} from 'react';
 import {Route, Routes} from "react-router"
 import Header from "./components/Header/header";
 import Main from "./components/Main/main";
+import Home from "./components/Home/Home";
 import {HashRouter} from 'react-router-dom';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
             <HashRouter>
                 <Header songsList={songsList} setSongsList={setSongsList} setCurSong={setCurSong} curSong={curSong}/>
                 <Routes>
-                    <Route path='/' element={<Main curSong={curSong} songsList={songsList} setCurSong={setCurSong}/>}/>
+                    <Route path='/' element={<Home songsList={songsList} setCurSong={setCurSong}/>}/>
                     <Route path='/:urlTitle' element={<Main curSong={curSong}/>}/>
                 </Routes>
             </HashRouter>
