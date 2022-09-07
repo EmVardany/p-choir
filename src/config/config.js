@@ -6,9 +6,9 @@ const generateConfig = () => {
         host: {
             version: '/api/v1',
             localServer: 'http://localhost:5000',
-            liveServer: 'https://git.heroku.com/quiet-brushlands-76366.git',
-            url_live: "https://git.heroku.com/quiet-brushlands-76366.git/api/v1",
             url_local: 'http://localhost:5000/api/v1',
+            liveServer: 'https://choir-rp.herokuapp.com',
+            url_live: "https://choir-rp.herokuapp.com/api/v1",
         },
     }
 }
