@@ -1,5 +1,6 @@
 import ImageGallery from 'react-image-gallery';
 import './Notes.css';
+
 const Notes = ({images}) => {
     return <ImageGallery items={images}
                          showNav={false}

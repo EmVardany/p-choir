@@ -7,8 +7,8 @@ const Main = (props) => {
 
     return (
         <section className={classes.main}>
-            {curSong?.partData?.length ? <Tabs data={curSong?.partData}/> : <div />}
-            {curSong?.notes?.length ? <Notes images={curSong?.notes}/> : <div />}
+            {curSong?.partData?.length ? <Tabs data={curSong?.partData}/> : <div/>}
+            {curSong?.notes?.length ? <Notes images={curSong?.notes}/> : <div/>}
         </section>
     )
 }

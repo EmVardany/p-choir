@@ -12,12 +12,13 @@ const Sidebar = (props) => {
     return (
         <Menu right
               width={'70%'}
-              customBurgerIcon={<img src={burger_icon}/>}
-              customCrossIcon={<img src={cross_icon}/>}>
+              customBurgerIcon={<img src={burger_icon} alt={"burger-icon"}/>}
+              customCrossIcon={<img src={cross_icon} alt={"cross-icon"}/>}>
             <ul>
                 {
                     props.songList.map((song, key) => (
-                            <li key={key} className={song.url_title === props.curSong.url_title ? 'active-item' : 'menu-item'}>
+                            <li key={key}
+                                className={song.url_title === props.curSong.url_title ? 'active-item' : 'menu-item'}>
                                 <NavLink to={`/${song.url_title}`}
                                          onClick={() => setCurSong(song)}>
                                     {song.title}

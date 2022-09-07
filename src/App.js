@@ -15,7 +15,7 @@ function App() {
 
                 <Header songsList={songsList} setSongsList={setSongsList} setCurSong={setCurSong} curSong={curSong}/>
                 <Routes>
-                    <Route path='/:urlTitle' element={<Main curSong={curSong} />}/>
+                    <Route path='/:urlTitle' element={<Main curSong={curSong}/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
