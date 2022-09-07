@@ -17,7 +17,7 @@ const Main = (props) => {
     } else {
         return (
             <section className={classes.main}>
-                <ul>
+                <ul className={classes.songList}>
                     {
                         songsList.map((song, key) => (
                                 <li key={key}
