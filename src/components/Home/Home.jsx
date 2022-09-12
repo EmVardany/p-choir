@@ -3,7 +3,7 @@ import classes from "./Home.module.css"
 
 const Home = (props) => {
     return (
-        <section>
+        <section className={classes.home}>
             <ul className={classes.songList}>
                 {
                     props.songsList.map((song, key) => (
