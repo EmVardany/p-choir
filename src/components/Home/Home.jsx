@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import classes from "./Home.module.css"
-import musicIcon from "../../assets/backgrounds/music.svg"
+import musicIcon from "../../assets/backgrounds/music.png"
 
 const Home = (props) => {
     return (

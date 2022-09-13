@@ -1,11 +1,23 @@
 import {slide as Menu} from 'react-burger-menu';
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
+import {useState} from "react";
 import burger_icon from "../../assets/backgrounds/burger-menu.svg";
 import cross_icon from "../../assets/backgrounds/hide-burger-menu.svg"
 
 const Sidebar = (props) => {
+    const [isOpen, setOpen] = useState(false)
+
+    const handleIsOpen = () => {
+        setOpen(!isOpen)
+    }
+
+    const closeSideBar = () => {
+        setOpen(false)
+    }
+
     const setCurSong = (song) => {
         props.setCurSong(song)
+        closeSideBar();
         return void 0;
     }
 
@@ -13,7 +25,11 @@ const Sidebar = (props) => {
         <Menu right
               width={'70%'}
               customBurgerIcon={<img src={burger_icon} alt={"burger-icon"}/>}
-              customCrossIcon={<img src={cross_icon} alt={"cross-icon"}/>}>
+              customCrossIcon={<img src={cross_icon} alt={"cross-icon"}/>}
+              isOpen={isOpen}
+              onOpen={handleIsOpen}
+              onClose={handleIsOpen}
+        >
             <ul>
                 {
                     props.songList.map((song, key) => (
